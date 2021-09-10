@@ -34,3 +34,13 @@ function solution(str, ending) {
 
 solution('abcde', 'cde'); // true
 ```
+
+## Education:
+___
+* **Moscow Open University**
+  * *Applied Informatics in Economics*
+
+## Languages:
+___
+* Russian - Native
+* English - B1/B2 *[Efset Certificate](https://www.efset.org/cert/oZHm1q)*
