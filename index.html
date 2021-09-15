@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VitaliyTarasov-cv-html</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link href="./css/bootstrap-grid.min.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Glory:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="row">
+        <!-- <header class ="header"> -->
+        <div class="avatar col-lg-4">
+          <img src="img/avatar.png" alt="Avatar">
+        </div>
+        <div class="name col-lg-8">
+          <h1>Vitaliy Tarasov</h1>
+          <h2>Frontend Developer</h2>
+        </div>
+        <!-- </header> -->
+      </div>
+    </div>
+  </header>
+  <div class="container">
+    <div class="row">
+      <main class="main col-md-12 col-lg-8">
+        <section class="about_myself">
+          <h2>About myself</h2>
+          <p>I’m 22 years old, novice in Front-end development, keen to obtain new skills. My strong sides are positive
+            approach to problem solving, hard working, ability to organise my workload effectively.</p>
+
+          <p class="about_myself_p">I’m very excited to become an accomplished Web Developer.</p>
+        </section>
+        <section class="code_example">
+          <h2>Code Example</h2>
+          <h3>Array Deep Count</h3>
+          <p class="kata_description"><em>Array.prototype.length will give you the number of top-level elements in an
+              array.
+
+              Your task is to create a function deepCount that returns the number of ALL elements within an array,
+              including any
+              within inner-level arrays.</em></p>
+          <pre><code>
+    function deepCount(a){
+      return a.reduce((i,  j) => {
+        return i + (Array.isArray(j) ? deepCount(j) : 0) },  a.length);
+    }
+
+    deepCount([1, 2, [3, 4, [5]]]);  //  7
+  </code></pre>
+        </section>
+        <section class="education">
+          <h2>Education</h2>
+          <ul class="education_list">
+            <li class="university"><span>Moscow Open University</span>
+              <p> ● Applied Informatics in Economics</p>
+            </li>
+          </ul>
+        </section>
+      </main>
+      <aside class="aside col-md-12 col-lg-4">
+        <section class="contacts">
+          <h2><span class="span_hower">Contacts</span></h2>
+          <ul class="contacts_list">
+            <li class="contacts_phone">+79270660741</li>
+            <li class="contacts_email">vivasaravian@gmail.com</li>
+            <li class="contacts_telegram">@cicasar</li>
+          </ul>
+        </section>
+        <section class="skills">
+          <h2><span class="span_hower">Skills</span></h2>
+          <ul class="skills_list">
+            <li class="skills_html">HTML</li>
+            <li class="skills_css">CSS</li>
+            <li class="skills_bootstrap">Bootstrap</li>
+            <li class="skills_js">JavaScript</li>
+          </ul>
+        </section>
+        <section class="languages">
+          <h2><span class="span_hower">Languages</span></h2>
+          <ul>
+            <li>Russian - Native</li>
+            <li>English - B1/B2 (<a href="https://www.efset.org/cert/oZHm1q">Effset Certificate</a>)</li>
+          </ul>
+        </section>
+      </aside>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="github col-4"><a href="https://github.com/VitaliyTarasov"><img src="./icons/github.svg"
+              alt="github"></a>
+        </div>
+        <div class="copyright col-4">
+          <p>© 2021</p>
+        </div>
+        <div class="rolling_scopes col-4"><a href="https://rs.school/js/"><img src="./icons/rs_school_js.svg"
+              alt="rs_school"></a></div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

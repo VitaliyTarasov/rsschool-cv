@@ -1,0 +1,255 @@
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+  font-size: 100%;
+  font-family: "Roboto", sans-serif;
+  background-color: #f3f3f3;
+}
+.row {
+  margin: 0;
+}
+p {
+  font-size: 16px;
+}
+
+.header {
+  padding-top: 30px;
+  text-align: center;
+}
+.header .container {
+  background-color: #f3f3f3;
+}
+.container {
+  padding: 0;
+}
+.name {
+  padding-top: 40px;
+  letter-spacing: 5px;
+}
+.name h2 {
+  font-style: italic;
+  font-size: 50px;
+  line-height: 70px;
+}
+.name h1 {
+  font-size: 60px;
+  line-height: 50px;
+}
+
+h1,
+h2 {
+  font-family: "Glory", sans-serif;
+}
+
+.header img {
+  -o-object-fit: cover;
+  object-fit: cover;
+  max-width: 200px;
+  max-height: 200px;
+  width: 100%;
+  height: 100%;
+}
+.avatar img {
+  border-radius: 50%;
+  padding: 10px 0;
+}
+
+.main {
+  background-color: #f3f3f3;
+}
+.main h2 {
+  border-bottom: 2px solid black;
+  padding-top: 10px;
+  font-size: 24px;
+}
+
+.main h3 {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.aside h2 {
+  padding-top: 10px;
+  font-size: 24px;
+}
+.aside h2 > span {
+  border-bottom: 2px solid black;
+}
+
+.main section {
+  padding: 10px;
+}
+
+.aside > section {
+  padding: 10px;
+}
+section > h2 {
+  text-transform: uppercase;
+}
+
+.contacts_list {
+  padding: 0;
+  line-height: 40px;
+}
+.contacts > ul > li {
+  padding-left: 40px;
+  background-repeat: no-repeat;
+  margin-left: 10px;
+  background-size: 26px;
+  background-position: left center;
+}
+.about_myself .about_myself_p {
+  padding-top: 20px;
+}
+.languages > ul > li {
+  padding: 10px;
+}
+.aside .languages {
+  padding-bottom: 30px;
+}
+.aside {
+  background-color: #f3f3f3;
+}
+.contacts .contacts_phone {
+  background-image: url(../icons/phone.svg);
+}
+.contacts .contacts_email {
+  background-image: url(../icons/gmail.svg);
+}
+.contacts .contacts_telegram {
+  background-image: url(../icons/telegram.svg);
+}
+.skills_list {
+  padding: 0;
+  line-height: 40px;
+}
+.skills > ul > li {
+  padding-left: 40px;
+  background-repeat: no-repeat;
+  margin-left: 10px;
+  background-size: 26px;
+  background-position: left center;
+}
+.skills .skills_html {
+  background-image: url(../icons/html.svg);
+}
+.skills .skills_css {
+  background-image: url(../icons/css.svg);
+}
+.skills .skills_bootstrap {
+  background-image: url(../icons/bootstrap.svg);
+}
+.skills .skills_js {
+  background-image: url(../icons/javascript.svg);
+}
+.about_myself > p {
+  padding-top: 10px;
+}
+.education {
+  padding-bottom: 30px;
+}
+.education_list {
+  padding: 0;
+}
+.education > ul > li {
+  padding-top: 10px;
+  background-repeat: no-repeat;
+  background-size: 26px;
+  background-position: left center;
+}
+.education > ul > li > p {
+  font-style: italic;
+  padding-left: 10px;
+}
+.education .university > span {
+  font-weight: bold;
+}
+
+.code_example > h3 {
+  padding-top: 10px;
+}
+.code_example > p {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.kata_description {
+  font-style: italic;
+}
+
+code {
+  color: #cb8758;
+}
+
+pre {
+  white-space: pre-wrap;
+  background-color: #171719;
+  padding: 10px;
+}
+
+.footer {
+  padding-bottom: 30px;
+}
+.footer .container {
+  padding: 0;
+  background-color: #333;
+}
+.footer .github img {
+  width: 100%;
+  height: 100%;
+  max-width: 54px;
+  max-height: 54px;
+  padding: 10px;
+}
+.footer .rolling_scopes {
+  text-align: right;
+}
+
+.footer .rolling_scopes img {
+  width: 100%;
+  height: 100%;
+  max-width: 100px;
+  max-height: 100px;
+}
+
+.footer .copyright > p {
+  padding-top: 25px;
+  text-align: center;
+  color: #f3f3f3;
+}
+
+@media (max-width: 991px) {
+  .avatar > img {
+    max-width: 150px;
+    max-height: 150px;
+  }
+}
+
+@media (max-width: 767px) {
+  .name {
+    padding-top: 20px;
+    letter-spacing: 5px;
+  }
+  .name h2 {
+    font-style: italic;
+    font-size: 35px;
+    line-height: 50px;
+  }
+  .name h1 {
+    font-size: 45px;
+    line-height: 50px;
+  }
+}
+
+@media (max-width: 424px) {
+  .name h2 {
+    font-style: italic;
+    font-size: 28px;
+    line-height: 40px;
+  }
+  .name h1 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+}
