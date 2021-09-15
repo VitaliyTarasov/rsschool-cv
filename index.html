@@ -8,6 +8,13 @@
   <title>VitaliyTarasov-cv-html</title>
   <link rel="stylesheet" href="./css/reset.css">
   <link href="./css/bootstrap-grid.min.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Glory:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -29,34 +36,44 @@
   </header>
   <div class="container">
     <div class="row">
-      <main class="main col-lg-8">
+      <main class="main col-md-12 col-lg-8">
         <section class="about_myself">
           <h2>About myself</h2>
           <p>I’m 22 years old, novice in Front-end development, keen to obtain new skills. My strong sides are positive
             approach to problem solving, hard working, ability to organise my workload effectively.</p>
 
-          <p>I’m very excited to become an accomplished Web Developer.</p>
+          <p class="about_myself_p">I’m very excited to become an accomplished Web Developer.</p>
         </section>
         <section class="code_example">
           <h2>Code Example</h2>
-          <p><strong>String ends with?</strong></p>
-          <p class="kata_description"><em>Complete the solution so that it returns true if the first argument(string)
-              passed in ends with the 2nd argument (also a string).</em></p>
-          <code><pre>
-                function solution(str, ending) {
-                  return ending === '' ? true : str === (str.slice(0, -ending.length) + ending);
-                }
-                
-                solution('abcde', 'cde'); // true
-              </pre></code>
+          <h3>Array Deep Count</h3>
+          <p class="kata_description"><em>Array.prototype.length will give you the number of top-level elements in an
+              array.
+
+              Your task is to create a function deepCount that returns the number of ALL elements within an array,
+              including any
+              within inner-level arrays.</em></p>
+          <pre><code>
+    function deepCount(a){
+      return a.reduce((i,  j) => {
+        return i + (Array.isArray(j) ? deepCount(j) : 0) },  a.length);
+    }
+
+    deepCount([1, 2, [3, 4, [5]]]);  //  7
+  </code></pre>
         </section>
-        <section class="languages">
-          <h2>Languages</h2>
+        <section class="education">
+          <h2>Education</h2>
+          <ul class="education_list">
+            <li class="university"><span>Moscow Open University</span>
+              <p> ● Applied Informatics in Economics</p>
+            </li>
+          </ul>
         </section>
       </main>
-      <aside class="aside col-4">
+      <aside class="aside col-md-12 col-lg-4">
         <section class="contacts">
-          <h2>Contacts</h2>
+          <h2><span class="span_hower">Contacts</span></h2>
           <ul class="contacts_list">
             <li class="contacts_phone">+79270660741</li>
             <li class="contacts_email">vivasaravian@gmail.com</li>
@@ -64,7 +81,7 @@
           </ul>
         </section>
         <section class="skills">
-          <h2>Skills</h2>
+          <h2><span class="span_hower">Skills</span></h2>
           <ul class="skills_list">
             <li class="skills_html">HTML</li>
             <li class="skills_css">CSS</li>
@@ -72,12 +89,11 @@
             <li class="skills_js">JavaScript</li>
           </ul>
         </section>
-        <section class="education">
-          <h2>Education</h2>
-          <ul class="education_list">
-            <li class="university">Moscow Open University
-              <p>Applied Informatics in Economics</p>
-            </li>
+        <section class="languages">
+          <h2><span class="span_hower">Languages</span></h2>
+          <ul>
+            <li>Russian - Native</li>
+            <li>English - B1/B2 (<a href="https://www.efset.org/cert/oZHm1q">Effset Certificate</a>)</li>
           </ul>
         </section>
       </aside>
@@ -97,8 +113,6 @@
       </div>
     </div>
   </footer>
-  </div>
-  </div>
 </body>
 
 </html>
